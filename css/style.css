@@ -1,7 +1,6 @@
 body {
   padding: 0px;
   margin: 0px;
-  background-color: white;
   font-family: "Keania One", sans-serif;
 }
 
@@ -20,6 +19,11 @@ header #bulb {
   margin-left: 1vw;
   width: 1.5vw;
   height: 4.5vh;
+}
+
+#bulb:hover {
+  cursor: pointer;
+  border-bottom: 3px solid yellow;
 }
 
 header nav {
@@ -181,6 +185,134 @@ footer picture img {
   top: 2.7vh;
 }
 
+/* Product container (later kun je meer producten toevoegen) */
+section{
+  display: flex;
+}
+.product
+  .container {
+    display: flex;
+   
+    width: 5%;
+    background: #ffffff;
+    padding: 20px;
+    margin: 0 auto; /* centreren */
+    text-align: left;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+ 
+.product:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.22);
+}
+ 
+/* Product afbeelding */
+.product img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+ 
+/* Product titel */
+.product h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-family: "Oswald", sans-serif;
+}
+ 
+/* Prijs */
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+}
+ 
+/* Koop-knop */
+.buy-btn {
+    background: #111;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+ 
+.buy-btn:hover {
+    background: #333;
+}/* GRID VOOR MEERDERE PRODUCTEN */
+.product-grid {
+    display: flex;            /* flex naast elkaar */
+    justify-content: center;  /* centreren in het midden */
+    gap: 40px;                /* ruimte tussen de producten */
+    flex-wrap: wrap;          /* als het scherm kleiner wordt, nieuwe regel */
+    margin-bottom: 50px;
+}
+ 
+/* ALGEMENE PRODUCTKAART */
+.product {
+    width: 280px;
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+ 
+.product:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.22);
+}
+ 
+/* PRODUCT AFBEELDING */
+.product img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+ 
+/* PRODUCT TITEL */
+.product h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-family: "Oswald", sans-serif;
+}
+ 
+/* PRIJS */
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+}
+ 
+/* KOOP KNOP */
+.buy-btn {
+    background: #000000;
+    color: #d38585;
+    padding: 12px 25px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+ 
+.buy-btn:hover {
+    background: #333;
+}
+
 #survivalGames {
   margin-bottom: 10vh;
   margin-left: 1vw;
@@ -198,134 +330,27 @@ footer picture img {
 
 .gameRij {
   display: flex;
-}/* Intro tekst */
-main p {
-    text-align: left;
-    font-size: 26px;
-    font-weight: 600;
-    margin-top: 30px;
-    margin-bottom: 40px;
 }
 
-/* Product container (later kun je meer producten toevoegen) */
-.product {
-    width: 300px;
-    background: #ffffff;
-    padding: 20px;
-    margin: 0 auto; /* centreren */
-    text-align: left;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    transition: transform .25s ease, box-shadow .25s ease;
+#review {
+  margin-bottom: 35vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  font-size: 1.5rem;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
 }
 
-.product:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 6px 25px rgba(0,0,0,0.22);
+#review article {
+  margin-left: 1vw;
 }
 
-/* Product afbeelding */
-.product img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
+#review div {
+  font-family: "Keania One", sans-serif;
 }
 
-/* Product titel */
-.product h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 8px;
-    font-family: "Oswald", sans-serif;
+#review div img {
+  width: 20vw;
 }
-
-/* Prijs */
-.price {
-    font-size: 20px;
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 15px;
-}
-
-/* Koop-knop */
-.buy-btn {
-    background: #111;
-    color: #fff;
-    padding: 12px 25px;
-    font-size: 15px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.2s ease;
-}
-
-.buy-btn:hover {
-    background: #333;
-}/* GRID VOOR MEERDERE PRODUCTEN */
-.product-grid {
-    display: flex;            /* flex naast elkaar */
-    justify-content: center;  /* centreren in het midden */
-    gap: 40px;                /* ruimte tussen de producten */
-    flex-wrap: wrap;          /* als het scherm kleiner wordt, nieuwe regel */
-    margin-bottom: 50px;
-}
-
-/* ALGEMENE PRODUCTKAART */
-.product {
-    width: 280px;
-    background: #ffffff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    transition: transform .25s ease, box-shadow .25s ease;
-}
-
-.product:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 6px 25px rgba(0,0,0,0.22);
-}
-
-/* PRODUCT AFBEELDING */
-.product img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-/* PRODUCT TITEL */
-.product h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 8px;
-    font-family: "Oswald", sans-serif;
-}
-
-/* PRIJS */
-.price {
-    font-size: 20px;
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 15px;
-}
-
-/* KOOP KNOP */
-.buy-btn {
-    background: #111;
-    color: #d38585;
-    padding: 12px 25px;
-    font-size: 15px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.2s ease;
-}
-
-.buy-btn:hover {
-    background: #333;
-}
-
