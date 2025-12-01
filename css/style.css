@@ -186,7 +186,9 @@ footer picture img {
 }
 
 /* Product container (later kun je meer producten toevoegen) */
-.product
+.productSect {
+  display: flex;
+}  
   .container {
     display: flex;
    
